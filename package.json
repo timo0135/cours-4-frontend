@@ -12,9 +12,11 @@
     "test:coverage": "vitest run --coverage",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write .",
-    "precommit": "npm run lint && npm run format && npm run test"
+    "precommit": "npm run lint && npm run format && npm run test",
+    "test:e2e:dev": "cypress open"
   },
   "dependencies": {
+    "cypress": "^14.0.0",
     "pinia": "^2.1.7",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5"
